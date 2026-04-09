@@ -63,6 +63,7 @@ set_logger_provider(provider)
 
 handler = LoggingHandler(level=logging.INFO, logger_provider=provider)
 logging.basicConfig(handlers=[handler], level=logging.INFO)
+logger.info("Logging configured with OpenTelemetry")
 
 
 
